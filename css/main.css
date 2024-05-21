@@ -1,1 +1,572 @@
-*, :before, :after {box-sizing:border-box;}
+body {
+    font-family: "Lato", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+header nav .masthead {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+header nav .masthead img {
+    height: 30px;
+    margin-right: 20px;
+}
+
+header nav .masthead h1 {
+    font-family: "Intro", sans-serif;
+    font-weight: 900;
+    margin: 0;
+}
+
+header nav .masthead p {
+    margin: 1rem 0 0;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    color: #999;
+    text-align: left;
+}
+
+header nav .nav-links {
+    display: flex;
+    gap: 60px;
+}
+
+header nav .nav-links a {
+    color: black;
+    text-decoration: none;
+    font-size: 1.25rem;
+}
+
+header nav .nav-links-div {
+    display: flex;
+}
+
+header nav .hamburger img,
+header nav .cart img {
+    display: block;
+    width: 40px;
+    height: 40px;
+}
+
+.order-section {
+    display: flex;
+    width: 100%;
+}
+
+.order-section .left-side,
+.order-section .right-side {
+    width: 50%;
+}
+
+.order-section .left-side {
+    background-color: #999;
+}
+
+.order-section .right-side {
+    background: linear-gradient(0deg, #74cc52 0%, #c0da38 100%);
+    color: white;
+    padding: 3rem;
+}
+
+.order-section .right-side h2 {
+    font-size: 2rem;
+    max-width: 24rem;
+    width: 100%;
+    margin: 0 0 2rem;
+    line-height: 2.75rem;
+    font-weight: 800;
+    padding: 0 0 0 3rem;
+}
+
+.order-section form :first-child {
+    border-radius: 5px 5px 0 0;
+}
+
+.order-section form :nth-child(2) {
+    border-radius: 0 0 5px 5px;
+}
+
+.order-section form label {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    background-color: white;
+    height: 4rem;
+    max-width: 27rem;
+    min-width: 275px;
+}
+
+.order-section .first-label {
+    border-bottom: 1px solid #999;
+}
+
+.order-section form input {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+}
+
+.order-section form label img {
+    width: 25px;
+    height: 25px;
+    filter: invert(35%) sepia(100%) saturate(3443%) hue-rotate(9deg) brightness(102%) contrast(101%);
+    margin: 0 1rem;
+}
+
+.order-section button {
+    background-color: #fa7344;
+    border: none;
+    color: white;
+    margin-top: 2rem;
+    padding: 15px 30px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: 800;
+}
+
+.how-it-works,
+.dishes,
+.restaurant-by-cuisine,
+.featured-restaurant {
+    text-align: center;
+    padding: 30px 20px;
+    font-size: 1.75rem;
+}
+
+.how-it-works h2,
+.dishes h2,
+.restaurant-by-cuisine h2,
+.featured-restaurant h2 {
+    font-family: "Intro", sans-serif;
+    font-weight: 900;
+    color: #fa7344;
+}
+
+.dishes,
+.restaurant-by-cuisine,
+.featured-restaurant {
+    background: #f5f5eb;
+}
+
+.steps-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.how-it-works .step,
+.cuisine-item,
+.restaurant-item,
+.feature-item {
+    display: inline-block;
+    width: 30%;
+    padding: 10px;
+    text-align: left;
+    vertical-align: top;
+    margin: 0 auto;
+}
+
+.feature-item {
+    width: 60%;
+}
+
+.how-it-works .step img {
+    max-width: 20%;
+    height: auto;
+    float: left;
+    margin-right: 20px;
+}
+
+.how-it-works .step .step-content {
+    display: inline-block;
+    max-width: 50%;
+    margin-left: 1.5rem;
+}
+
+.how-it-works .step h3 {
+    margin: 0 0 1rem;
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+.how-it-works .step .numbers {
+    font-weight: 400;
+    margin-right: 0.75rem;
+}
+
+.how-it-works .step p {
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: #999;
+}
+
+.dishes-container,
+.cuisine-container,
+.restaurant-container,
+.featured-restaurant-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    justify-items: center;
+}
+
+.dish-item,
+.cuisine-item,
+.restaurant-item {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 550px;
+    box-sizing: border-box;
+    text-align: left;
+    position: relative;
+    height: 100%;
+    background: #fff;
+    padding: 0;
+}
+
+.dish-item img,
+.cuisine-item img,
+.restaurant-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 10px;
+    border-radius: 5px 5px 0 0;
+}
+
+.dish-info h3,
+.cuisine-item h3,
+.restaurant-info h3 {
+    font-size: 1rem;
+    margin: 10px 25px;
+}
+
+.dish-info h4,
+.cuisine-item h4,
+.restaurant-info h4 {
+    font-size: 0.9rem;
+    margin: 0 25px 10px;
+    color: #999;
+}
+
+.price-and-buy p {
+    font-size: 1.2rem;
+    display: inline-block;
+    margin: 0 25px 10px;
+    vertical-align: middle;
+    font-weight: 800;
+}
+
+.price-and-buy button,
+.view-menu-and-buy-btns button {
+    display: inline-block;
+    background-color: #83c04d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: 800;
+    font-style: italic;
+    cursor: pointer;
+    vertical-align: middle;
+}
+
+.price-and-buy button:hover,
+.view-menu-and-buy-btns button:hover {
+    background-color: #72a63e;
+}
+
+.price-and-buy,
+.view-menu-and-buy-btns {
+    margin-top: auto;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.aside {
+    background: linear-gradient(to bottom, #fa7346, #ef3a51);
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    height: 500px;
+}
+
+.aside .feature-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.aside .feature-item img {
+    fill: #f4a300;
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    margin: 2rem;
+    object-fit: contain;
+}
+
+.aside .feature-item-img-background {
+    background-color: white;
+    border-radius: 50%;
+}
+
+.aside .feature-item h3 {
+    font-size: 1.1rem;
+    font-weight: 800;
+    margin-top: 3rem;
+}
+
+.aside .feature-item p {
+    max-width: 12rem;
+    margin-top: 0;
+    text-align: center;
+}
+
+.banner {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+    font-size: 2rem;
+    font-weight: 800;
+    margin: 30px;
+}
+
+.featured-restaurant {
+    margin-bottom: 2rem;
+}
+
+.featured-restaurant-container .view-menu-and-buy-btns {
+    margin-top: 1.5rem;
+    gap: 25px;
+}
+
+.wrap-label {
+    position: absolute;
+    top: 80px;
+    left: -5px;
+    background-color: #fa7344;
+    color: white;
+    padding: 5px;
+    transform: rotate(-45deg);
+    transform-origin: left top;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.links-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 1rem;
+}
+
+.links {
+    color: black;
+    text-align: left;
+    padding: 10px;
+    display: inline-block;
+    width: 23%;
+    vertical-align: top;
+    margin-bottom: 3rem;
+    line-height: 2rem;
+}
+
+.links-section h3 {
+    font-weight: bold;
+}
+
+.links-section a {
+    color: #999;
+    display: block;
+    margin: 5px 0;
+    text-decoration: none;
+}
+
+.footer-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+footer .hazy-theme {
+    color: #83c04d;
+}
+
+footer .footer-links a {
+    padding-right: 30px;
+    color: black;
+    text-decoration: none;
+}
+
+/* Media Queries */
+@media (max-width: 600px) {
+    header nav .nav-links {
+        display: none;
+    }
+
+    header nav {
+        align-items: flex-start;
+    }
+
+    .order-section {
+        padding: 0;
+        flex-direction: column;
+    }
+
+    .order-section .left-side,
+    .order-section .right-side {
+        width: 100%;
+    }
+
+    .order-section .right-side {
+        padding: 2rem 0;
+    }
+
+    .order-section .right-side > * {
+        padding: 0.5rem 3rem;
+        margin-bottom: 0 !important;
+    }
+
+    .order-section .left-side {
+        height: 400px;
+    }
+
+    .how-it-works .step,
+    .cuisine-item,
+    .restaurant-item,
+    .feature-item {
+        width: 100%;
+    }
+
+    .how-it-works .step .step-content {
+        max-width: 66%;
+    }
+
+    .price-and-buy,
+    .view-menu-and-buy-btns {
+        justify-content: space-between;
+    }
+
+    .price-and-buy button,
+    .view-menu-and-buy-btns button {
+        margin-right: 25px;
+    }
+
+    .links-section {
+        flex-direction: column;
+    }
+
+    .links-section .links {
+        width: 100%;
+        margin-bottom: 0;
+    }
+
+    .aside {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0;
+        height: auto;
+        margin-top: 3rem;
+        padding-top: 2.5rem;
+    }
+
+    .aside .feature-item img {
+        height: 60px;
+        width: 60px;
+    }
+
+    .aside .feature-item h3 {
+        margin-top: 2rem;
+        margin-bottom: 0;
+        text-align: center;
+    }
+
+    .aside .feature-item p {
+        margin-top: 1.25rem;
+        text-align: center;
+    }
+
+    .footer-section {
+        flex-direction: column;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 900px) {
+    header nav .nav-links {
+        display: none;
+    }
+
+    .how-it-works .step .step-content {
+        max-width: 50%;
+    }
+
+    .aside {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0;
+        height: auto;
+        margin-top: 3rem;
+        padding-top: 2.5rem;
+    }
+
+    .aside .feature-item img {
+        height: 60px;
+        width: 60px;
+    }
+
+    .aside .feature-item h3 {
+        margin-top: 2rem;
+        margin-bottom: 0;
+        text-align: center;
+    }
+
+    .aside .feature-item p {
+        margin-top: 1.25rem;
+        text-align: center;
+    }
+
+    .footer-section {
+        flex-direction: column;
+    }
+}
+
+@media (min-width: 901px) {
+    header nav .nav-links {
+        gap: 20px;
+    }
+
+    header nav .hamburger img,
+    header nav .cart img {
+        display: none;
+    }
+}
